@@ -1,0 +1,29 @@
+
+/* style.css */
+
+/* Tùy chỉnh cho ô tìm kiếm */
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 200px; /* Kích thước ô tìm kiếm */
+}
+
+/* Tùy chỉnh cho nút tìm kiếm */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e63946; /* Màu nền khi hover */
+}
+
+/* Tùy chỉnh cho các thẻ h2 */
+h2 {
+    color: #333; /* Màu chữ cho tiêu đề sản phẩm */
+}
+
+/* Tùy chỉnh cho các thẻ p */
+p {
+    font-size: 1.2rem; /* Kích thước chữ cho giá sản phẩm */
+}

@@ -1,0 +1,442 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Beauty Shop
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-black text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center">
+     <img alt="Beauty Shop Logo" class="h-12" height="50" src="ảnh/beuty.jpg" width="50"/>
+    </div>
+    <nav class="flex space-x-6">
+     <a class="hover:text-pink-500" href="PRODUCTS.html">
+      PRODUCTS
+     </a>
+     <a class="hover:text-pink-500" href="NEWS.html">
+      NEWS
+     </a>
+     <a class="hover:text-pink-500" href="PROMOTION.html">
+      PROMOTION
+     </a>
+    </nav>
+    <div class="relative">
+      <input id="searchInput" type="text" placeholder="Search products..." class="border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-500">
+      <button id="searchBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-pink-500">
+          <i class="fas fa-search"></i>
+      </button>
+  </div>
+    <div class="flex space-x-4">
+     <a class="hover:text-pink-500" href="#">
+      <i class="fas fa-search">
+      </i>
+     </a>
+     <a class="hover:text-pink-500" href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a class="hover:text-pink-500" href="#">
+      <i class="fas fa-shopping-cart">
+      </i>
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="container mx-auto py-8 px-6">
+   <div class="flex flex-wrap -mx-4">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-1/4 px-4 mb-8 md:mb-0">
+     <div class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-lg font-bold mb-4">
+       Filters
+      </h2>
+      <div class="mb-4">
+       <h3 class="font-semibold mb-2">
+        By category
+       </h3>
+       <ul>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Lipstick
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Sombras
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Accessories
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Blush
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Base
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Hair
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="mb-4">
+       <h3 class="font-semibold mb-2">
+        Price order
+       </h3>
+       <select class="w-full border-gray-300 rounded-lg">
+        <option>
+         Lower first
+        </option>
+        <option>
+         Higher first
+        </option>
+       </select>
+      </div>
+      <div>
+       <h3 class="font-semibold mb-2">
+        By brand
+       </h3>
+       <ul>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Chanel
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Dior
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          MAC Cosmetics
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Maybelline
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Bobbi Brown
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-700 hover:text-pink-500" href="#">
+          Too Faced
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </aside>
+    <!-- Products -->
+    <section class="w-full md:w-3/4 px-4">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product Card -->
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior lip balm" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/Son-Duong-Dior-Addict-Lip-Maximizer-009-Intense-Rosewood-40.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior lip balm
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $35.00
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <!-- Repeat for each product -->
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Capture Totale" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/gy-iQuJTw22yhzlWxCcJ0nKJZmRGEL8Fc8yphk-Bcxc.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Capture Totale
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $114.00
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="DIOR Face Powder" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/ada.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        DIOR Face Powder                                                                                                    
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $47.00
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Forever Clean" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/bcaa.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Forever Clean
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $84.72
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Backstage Face And Body" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/diorrr.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Backstage Face And Body
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $43.07
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Rouge Blush Color &amp; Glow" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/lala.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Rouge Blush Color &amp; Glow
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $39.11
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Rouge Limited" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/cvv.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Rouge Limited
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $53.29
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Dior Addict Lip Icy Blue" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/lavuu.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Dior Addict Lip Icy Blue
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $45.32
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+       <img alt="Sunscreen" class="w-full h-48 object-cover mb-4" height="200" src="ảnh/zz.jpg" width="200"/>
+       <h3 class="text-lg font-bold mb-2">
+        Sunscreen
+       </h3>
+       <p class="text-pink-500 mb-4">
+        $65.93
+       </p>
+       <button class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">
+        <i class="fas fa-cart-plus">
+        </i>
+        ADD TO CART
+       </button>
+      </div>
+     </div>
+     <div class="mt-8 text-center">
+      <button class="bg-pink-500 text-white py-2 px-6 rounded-lg hover:bg-pink-600">
+       Load more
+      </button>
+     </div>
+    </section>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-pink-100 py-8">
+   <div class="container mx-auto px-6">
+    <div class="flex flex-wrap -mx-4">
+     <div class="w-full md:w-1/4 px-4 mb-8 md:mb-0">
+      <h3 class="text-lg font-bold mb-4">
+        Social Networks
+    </h3>
+    <div class="flex space-x-4">
+     <a class="text-gray-700 hover:text-pink-500" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-pink-500" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-gray-700 hover:text-pink-500" href="#">
+      <i class="fab fa-whatsapp">
+      </i>
+     </a>
+    </div>
+   </div>
+   <div class="w-full md:w-1/4 px-4 mb-8 md:mb-0">
+    <h3 class="text-lg font-bold mb-4">
+     Categories
+    </h3>
+    <ul>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Skin
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Sombras
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Eyelashes
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Blush
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Iluminadores
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Lipstick
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Brushes
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Base
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Hair
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="w-full md:w-1/4 px-4 mb-8 md:mb-0">
+    <h3 class="text-lg font-bold mb-4">
+     Partner brands
+    </h3>
+    <ul>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-700 hover:text-pink-500" href="#">
+       Beauty Shop
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div class="w-full md:w-1/4 px-4">
+    <h3 class="text-lg font-bold mb-4">
+     Payment methods
+    </h3>
+    <img alt="Payment methods" class="w-full h-auto" height="50" src="ảnh/pay.png" width="200"/>
+   </div>
+  </div>
+  <div class="mt-8 text-center text-gray-700">
+   <p>
+    Beauty Shop
+   </p>
+   <p>
+    137/7 Nguyen phuoc nguyen, Quan Thanh Khe, TP Da Nang
+   </p>
+   <p>
+    Copyright © E Nhóm 7. 2025. All rights reserved.
+   </p>
+  </div>
+ </div>
+</footer>
+</body>
+</html>
+

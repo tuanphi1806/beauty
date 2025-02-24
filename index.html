@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <script src="login.js" defer></script>
+  <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="logo-container">
+                <img src="ảnh/beuty.jpg" alt="Logo">
+            </div>
+
+            <ul class="tab-group">
+                <li class="tab active"><a href="#signup">Sign Up</a></li>
+                <li class="tab"><a href="#login">Log In</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- Đăng ký -->
+                <div id="signup">   
+                    <h1>Create an Account</h1>
+                    <form id="signup-form">
+                        <div class="field-wrap">
+                            <label>First Name<span class="req">*</span></label>
+                            <input type="text" id="first-name" required autocomplete="off"/>
+                        </div>
+                        <div class="field-wrap">
+                            <label>Last Name<span class="req">*</span></label>
+                            <input type="text" id="last-name" required autocomplete="off"/>
+                        </div>
+                        <div class="field-wrap">
+                            <label>Email Address<span class="req">*</span></label>
+                            <input type="email" id="signup-email" required autocomplete="off"/>
+                        </div>
+                        <div class="field-wrap">
+                            <label>Set A Password<span class="req">*</span></label>
+                            <input type="password" id="signup-password" required autocomplete="off"/>
+                        </div>
+                        <button type="submit" class="button">Sign Up</button>
+                        <p id="signup-message"></p>
+                    </form>
+                </div>
+
+                <!-- Đăng nhập -->
+                <div id="login">   
+                    <h1>Welcome Back!</h1>
+                    <form id="login-form">
+                        <div class="field-wrap">
+                            <label>Email Address<span class="req">*</span></label>
+                            <input type="email" id="login-email" required autocomplete="off"/>
+                        </div>
+                        <div class="field-wrap">
+                            <label>Password<span class="req">*</span></label>
+                            <input type="password" id="login-password" required autocomplete="off"/>
+                        </div>
+                        <p class="forgot"><a href="#" id="forgot-password">Forgot Password?</a></p>
+                        <button type="submit" class="button">Log In</button>
+                        <p id="login-message"></p>
+                    </form>
+                </div>
+
+                <!-- Quên mật khẩu -->
+                <div id="forgot-password-form" style="display:none;">
+                    <h1>Reset Password</h1>
+                    <form id="reset-password-form">
+                        <div class="field-wrap">
+                            <label>Email Address</label>
+                            <input type="email" id="reset-email" required />
+                        </div>
+                        <button type="submit" class="button">Send Reset Link</button>
+                    </form>
+                    <p id="reset-message"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
